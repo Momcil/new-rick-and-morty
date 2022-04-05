@@ -8,7 +8,7 @@ function App() {
         <h1>Rick and Morty-App</h1>
       </header>
       <div className='Card'>
-        <img src='https://rickandmortyapi.com/api/character/avatar/2.jpeg'></img>
+        <img src='https://rickandmortyapi.com/api/character/avatar/2.jpeg'/>
         <h2>Morty Smith</h2>
         <button>show more</button>
       </div>
