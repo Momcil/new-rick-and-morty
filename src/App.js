@@ -12,14 +12,13 @@ function App() {
         <h2>Morty Smith</h2>
         <button>show more</button>
       </div>
-      <div className='Navbar'>
+      <footer className='Navbar'>
         <ul>
-          <li ></li>
           <li className='Home/Dashboard'><a href='#'>Dashboard</a></li>
           <li className='Ranrom Characters'><a href='#'>Ranrom</a></li>
           <li className='Favorites'><a href='#'>Favorites</a></li>
         </ul>
-      </div>
+      </footer>
     </div>
   );
 }
