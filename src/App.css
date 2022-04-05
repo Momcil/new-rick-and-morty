@@ -1,16 +1,11 @@
 .App {
   text-align: center;
+  background-color: rgb(5, 132, 103);
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
+.Header {
   background-color: #282c34;
-  min-height: 100vh;
+  min-height: 10vh;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -19,15 +14,33 @@
   color: white;
 }
 
-.App-link {
-  color: #61dafb;
-}
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+
+.Card{
+  background-color: rgb(15, 130, 130);
+  margin:2rem auto;
+  border: 2px solid rgb(0, 255, 60) ;
+}
+.Card-image{
+  padding-top:1rem;
+}
+.Card-btn{
+  margin-bottom: 1rem;
+}
+.Navbar{
+  background-color: #282c34;
+  min-height: 10vh;
+  font-size: 2rem;
+  color: white;
+}
+ul{
+  display: flex;
+  flex-direction: row;
+  justify-content: space-around;
+  list-style-type: none;
+  background-color: #282c34;
+  width: auto;
+}
+a{
+  color: aliceblue;
 }
