@@ -4,6 +4,7 @@ import './App.css';
 import Footer from './components/Footer';
 import Card from './components/Card';
 
+
 function App() {
   return (
     <div className="App">

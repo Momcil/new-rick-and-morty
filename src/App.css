@@ -33,14 +33,7 @@
   font-size: 2rem;
   color: white;
 }
-ul{
-  display: flex;
-  flex-direction: row;
-  justify-content: space-around;
-  list-style-type: none;
-  background-color: #282c34;
-  width: auto;
-}
+
 a{
   color: aliceblue;
 }
