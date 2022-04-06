@@ -8,19 +8,6 @@ import {useState, useEffect} from 'react';
 
 
 function App() {
-  const [characters, setCharacters] = useState([])
-
-const url= 'https://rickandmortyapi.com/api/character'
-
-function doFetch(){
-    fetch(url)
-    .then((response) => response.json())
-    .then((data) => setCharacters(data.results))
-}
-console.log(characters)
-useEffect(() => {
-  doFetch();
-}, []);
 
   return (
     <div className="App">

@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 
 
@@ -9,8 +9,8 @@ function Card() {
   
   function doFetch(){
       fetch(url)
-      .then((response) => response.json())
-      .then((data) => setCharacters(data.results))
+      .then(response => response.json())
+      .then(data => setCharacters(data.results))
   }
   console.log(characters)
   useEffect(() => {
@@ -22,7 +22,6 @@ function Card() {
        {characters.map(({name, id, image}) => {
          return (
          <>
-         <div></div>
          <img src={image} alt="img" />;
          <p>{name}</p>
          <button>show more</button>
