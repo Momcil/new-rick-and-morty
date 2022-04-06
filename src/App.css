@@ -3,24 +3,8 @@
   background-color: rgb(5, 132, 103);
 }
 
-.Header {
-  background-color: #282c34;
-  min-height: 10vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
-}
 
 
-
-.Card{
-  background-color: rgb(15, 130, 130);
-  margin:2rem auto;
-  border: 2px solid rgb(0, 255, 60) ;
-}
 .Card-image{
   padding-top:1rem;
 }

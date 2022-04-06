@@ -1,13 +1,22 @@
-import React from 'react'
+import React, {useState, useEffect} from 'react';
+import styled from 'styled-components'
+
 
 function Card() {
+    
   return (
-    <div className='Card'>
-        <img src='https://rickandmortyapi.com/api/character/avatar/2.jpeg'/>
-        <h2>Morty Smith</h2>
-        <button>show more</button>
-      </div>
-  )
-}
+    <CardContainer>
+     
+            <img src='https://rickandmortyapi.com/api/character/avatar/2.jpeg'/>
+            <p>Morty Smith</p>
 
-export default Card
+    </CardContainer> 
+     )}
+
+     export default Card
+
+    const CardContainer = styled.div`
+        background-color: rgb(15, 130, 130);
+        margin:2rem auto;
+        border: 2px solid rgb(0, 255, 60) ;
+     `
