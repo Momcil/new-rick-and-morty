@@ -12,7 +12,6 @@ function Card() {
       .then(response => response.json())
       .then(data => setCharacters(data.results))
   }
-  console.log(characters)
   useEffect(() => {
     doFetch();
   }, []);
