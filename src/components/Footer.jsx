@@ -3,13 +3,13 @@ import styled from 'styled-components'
 
 function Footer() {
   return (
-    <div className='Navbar'>
     <NavContainer>
+    <>
       <li className='Home/Dashboard'><a href='#'>Dashboard</a></li>
       <li className='Ranrom Characters'><a href='#'>Ranrom</a></li>
       <li className='Favorites'><a href='#'>Favorites</a></li>
-    </NavContainer>
-  </div>
+    </>
+  </NavContainer>
   )
 }
 
