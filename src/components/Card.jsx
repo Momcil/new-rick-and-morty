@@ -6,11 +6,10 @@ function Card() {
     
   return (
     <CardContainer>
-         <>
+     
             <img src='https://rickandmortyapi.com/api/character/avatar/2.jpeg'/>
             <p>Morty Smith</p>
-            <button>Show More</button>
-        </>
+
     </CardContainer> 
      )}
 
