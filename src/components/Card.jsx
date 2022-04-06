@@ -1,15 +1,32 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect} from 'react'
 import styled from 'styled-components'
 
 
 function Card() {
-    
+  const [characters, setCharacters] = useState([])
+
+  const url= 'https://rickandmortyapi.com/api/character'
+  
+  function doFetch(){
+      fetch(url)
+      .then(response => response.json())
+      .then(data => setCharacters(data.results))
+  }
+  useEffect(() => {
+    doFetch();
+  }, []);
+  
   return (
     <CardContainer>
-     
-            <img src='https://rickandmortyapi.com/api/character/avatar/2.jpeg'/>
-            <p>Morty Smith</p>
-
+       {characters.map(({name, id, image}) => {
+         return (
+         <>
+         <img src={image} alt="img" />;
+         <p>{name}</p>
+         <button>show more</button>
+         </>
+         )
+        })}
     </CardContainer> 
      )}
 
