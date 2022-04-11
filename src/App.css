@@ -1,21 +1,36 @@
 .App {
+  display: flex;
+  justify-content: space-around;
+  flex-direction: column;
   text-align: center;
   background-color: rgb(5, 132, 103);
 }
+.CardContainer{
+  display:flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
 
+}
 
 
 .Card-image{
-  padding-top:1rem;
+  margin-top: 1rem;
+  padding-top: 1rem;
 }
 .Card-btn{
-  margin-bottom: 1rem;
+  margin-top : 1rem;
+  display: block;
 }
 .Navbar{
   background-color: #282c34;
   min-height: 10vh;
   font-size: 2rem;
   color: white;
+}
+button{
+  background-color: #282c34;
+  color: aliceblue;
 }
 
 a{

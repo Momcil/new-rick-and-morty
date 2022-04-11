@@ -1,15 +1,20 @@
 import React from 'react'
 import styled from 'styled-components'
+import { Link } from "react-router-dom"
 
 function Footer() {
   return (
     <NavContainer>
-  
-      <li className='Home/Dashboard'><a href='#'>Dashboard</a></li>
-      <li className='Ranrom Characters'><a href='#'>Ranrom</a></li>
-      <li className='Favorites'><a href='#'>Favorites</a></li>
-
-  </NavContainer>
+      <li className='home'>
+        <Link to='/'>Home</Link>
+      </li>
+      <li className='random-characters'>
+        <Link to='/random'>Random Characters</Link>
+      </li>
+      <li className='favorites'>
+        <Link to='/favorites'>Favorites</Link>
+      </li>
+    </NavContainer>
   )
 }
 

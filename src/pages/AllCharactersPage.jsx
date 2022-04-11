@@ -1,8 +1,10 @@
 import React, {useState, useEffect} from 'react'
+import { Link } from 'react-router-dom'
 import styled from 'styled-components'
 
 
-function Card() {
+
+function AllCharactersPage() {
   const [characters, setCharacters] = useState([])
 
   const url= 'https://rickandmortyapi.com/api/character'
@@ -20,17 +22,19 @@ function Card() {
     <CardContainer>
        {characters.map(({name, id, image}) => {
          return (
-         <>
-         <img src={image} alt="img" />;
-         <p>{name}</p>
-         <button>show more</button>
-         </>
+          <>
+            <img className="Card-image" key={id} src={image} alt="img" />;
+            <p>{name}</p>
+            <button className='Card-btn'>
+            <Link to={"/showmore/" + id} >Show More</Link>
+            </button>
+          </>
          )
         })}
     </CardContainer> 
      )}
 
-     export default Card
+     export default AllCharactersPage
 
     const CardContainer = styled.div`
         background-color: rgb(15, 130, 130);
